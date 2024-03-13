@@ -36,3 +36,4 @@ spec:
           httpGet:
             port: 80
             path: /healthz/ready
+
