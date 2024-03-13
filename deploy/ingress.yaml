@@ -6,6 +6,10 @@ metadata:
   name: single-default-backend-ingress
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+      - vm.comeonomon.ru
+      secretName: example-app-tls
   defaultBackend:
     service:
       name: nginxhello
